@@ -1,0 +1,865 @@
+/**
+* All of the CSS for your admin-specific functionality should be
+* included in this file.
+*/
+
+@font-face {
+  font-family: 'Cerebri Sans';
+  src: url('../fonts/CerebriSans-Medium.eot');
+  src: url('../fonts/CerebriSans-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CerebriSans-Medium.woff2') format('woff2'),
+  url('../fonts/CerebriSans-Medium.woff') format('woff'),
+  url('../fonts/CerebriSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Book';
+  src: url('../fonts/CerebriSans-Book.eot');
+  src: url('../fonts/CerebriSans-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CerebriSans-Book.woff2') format('woff2'),
+  url('../fonts/CerebriSans-Book.woff') format('woff'),
+  url('../fonts/CerebriSans-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url('../fonts/Glyphter.eot');
+  src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Glyphter.woff') format('woff'),
+  url('../fonts/Glyphter.ttf') format('truetype'),
+  url('../fonts/Glyphter.svg#Glyphter') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*='dashicons-primer-mark-wht']:before{
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.dashicons-primer-mark-wht:before{content:'\0041';}
+
+#toplevel_page_primer-by-chloedigital .dashicons-before {
+  background-repeat: no-repeat;
+  background-position-x: 8px;
+  background-position-y: 9px;
+  background-size: 20px;
+}
+
+#toplevel_page_primer-by-chloedigital .dashicons-before img{
+  height: 20px;
+}
+
+#primer-dynamic-form .field_group{
+  display: block;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+#primer-dynamic-form .field_row {
+  border: 1px solid lightgrey;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px auto;
+  box-shadow: 1px 2px 2px #e9e7e7;
+  position: relative;
+}
+
+#primer-dynamic-form .postbox > .error {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 95%;
+  margin: 14px auto;
+}
+
+#primer-dynamic-form .postbox .error{
+  color: white;
+  background: #ffa1a1;
+}
+
+#primer-dynamic-form #add_field_row{
+  text-align: right;
+  display: inline-block;
+  float: right;
+}
+
+#primer-dynamic-form .primer-description.set-description.primer-required {
+  display: inline;
+  padding-left: 0 !important;
+}
+
+#primer-dynamic-form .remove_row {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#primer-dynamic-form .primer-image-input{
+  cursor: pointer;
+  padding-top: 100%;
+  width: 100px;
+  border: 1px solid lightgray;
+}
+
+#primer-dynamic-form .primer-image-input-preview{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#primer-dynamic-form .primer-image-input::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  vertical-align: middle;
+  left: 50%;
+  font-size: 3.5em;
+  transform: translate(-50%, -75%);
+  opacity: 0.5;
+}
+
+#primer-dynamic-form .primer-image-input-container{
+  display: inline-block;
+  position: relative
+}
+#primer-dynamic-form .primer-image-input-container {
+  margin: 10px 0 0;
+}
+#primer-dynamic-form .primer-image-input-container .remove-image{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  box-shadow: none;
+  padding: 8px 5px;
+  line-height: 1;
+  color: white;
+  border-radius: 0;
+}
+
+#primer-dynamic-form .primer-image-input-container .remove-image:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+#primer-dynamic-form .primer-image-input-container .dashicons{
+  font-size: 1em;
+}
+
+#primer-dynamic-form .primer-images-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#primer-dynamic-form .primer-images-container > .field_group:first-child{
+  width: 15%;
+}
+
+#primer-dynamic-form .primer-images-container > .field_group:not(:first-child){
+  width: 85%;
+}
+#primer-dynamic-form .primer-images-container {
+  border-bottom: 4px double #eacdb9;
+  padding: 0;
+  margin: 0 0 30px;
+}
+#primer-dynamic-form .alt-image-row-wrap .form_field{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#primer-dynamic-form .field_group.products_group {
+  width: 100%;
+  margin: 50px 0 20px;
+}
+
+#primer-dynamic-form .products-row {
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #e8e8e8;
+  position: relative;
+}
+
+#primer-dynamic-form .remove_product{
+  float: right;
+}
+
+#primer-dynamic-form .add_product{
+  float: right
+}
+
+/* Tooltips */
+
+.primer-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.primer-tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 220px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transform: translate(-50%, 0);
+}
+
+.primer-tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.primer-tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*  */
+.primer-green,
+.primer-red{
+  height: 10px;
+  width: 10px;
+  display: block;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+.primer-green{
+  background: #47ce4e;
+  box-shadow: 1px 1px 1px #369f3b;
+}
+
+.primer-red{
+  background: #ff4b5e;
+  box-shadow: 1px 1px 1px #a42a2a;
+}
+
+@media only screen and (max-width: 780px) {
+  .primer_header_logo {
+    width: 80%;
+    margin: 20px 0 10px 0;
+  }
+
+  #primer_options {
+    /*width: 100%;
+    margin: 0px;
+    padding: 0;
+    outline: none;*/
+    background: #fff;
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px 80px;
+    outline: 1px solid #e2bfa6;
+    outline-offset: 6px;
+  }
+  #primer_image_url {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  fieldset {
+    text-align: center;
+  }
+}
+/* Custom CSS from ADietz */
+.primer-settings-message {
+  padding: 17px 20px;
+  margin: 20px 0;
+  background: #efe6df url('../images/Primer_Notice_Bg.png');
+  background-size: 1100px 75px;
+  box-shadow: none !important;
+  border: 1px solid #f4ebe6;
+}
+.primer-settings-message p {
+  font-family: "Cerebri Sans";
+  font-size: 14px;
+  display: inline-block;
+}
+.primer-settings-message span {
+  font-family: "Cerebri Sans Book";
+}
+.primer_check_settings_message {
+  display: inline-block;
+}
+
+.primer_check_settings_message a {
+  background: #cd9084;
+  padding: 8px 18px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-family: "Cerebri Sans Book";
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.primer_check_settings_message a:hover {
+  background: #a95a53;
+}
+
+.primer_message_submark_container {
+  float: right;
+  display: inline-block;
+}
+
+.primer_message_submark {
+  padding-right: 10px;
+  margin-top: -6px;
+  display: inline-block;
+  float: right;
+}
+img.primer_message_submark {
+  width: 50px;
+  height: 50px;
+}
+
+body.toplevel_page_primer-by-chloedigital {
+  background: #f1f1f1;
+}
+
+@media only screen and (min-width: 781px) {
+  .primer_header_logo {
+    width: 550px;
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  form#primer_options {
+    background: #fff;
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px 80px;
+    outline: 1px solid #e2bfa6;
+    outline-offset: 6px;
+  }
+}
+
+form#primer_options h2 {
+  font-family: "Cerebri Sans Book";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  margin: 0 0 5px;
+}
+
+
+form#primer_options span {
+  color: #cd9084;
+  font-family: "Cerebri Sans Book";
+  font-size: 14px;
+  line-height: 21px;
+}
+
+input#primer_blog_name.regular-text {
+  width: 100%;
+  border-bottom: 1px solid #eacdb9 !important;
+  box-shadow: none;
+  border: 0;
+  padding: 10px 0;
+  margin: 20px 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input#primer_admin_email.regular-text {
+  width: 100%;
+  border-bottom: 1px solid #eacdb9 !important;
+  box-shadow: none;
+  border: 0;
+  padding: 10px 0;
+  margin: 20px 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input#primer_image_url {
+  box-shadow: none;
+  border-bottom: 1px solid #eacdb9;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+input#primer_image_url.regular_text {
+  width: 70%;
+  border-bottom: 1px solid #eacdb9 !important;
+  box-shadow: none;
+  border: 0;
+  padding: 10px 0;
+  width: 70%;
+}
+
+input#primer_media_manager.button-primary {
+  background: #eacdb9;
+  box-shadow: none;
+  text-shadow: none;
+  border-color: none;
+  font-family: "Cerebri Sans Book";
+  font-size: 12px;
+  padding: 0 20px;
+  height: 36px;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+#primer_options .button-primary {
+  font-family: "Cerebri Sans Book";
+  border-radius: 0;
+  border-style: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 36px;
+  padding: 0 15px;
+}
+
+#primer_options input#submit.button.button-primary {
+  background: #cd9084;
+  width: 100%;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  height: 36px;
+  font-family: "Cerebri Sans Book";
+  font-size: 12px;
+}
+
+#primer_options input#submit.button.button-primary:hover {
+  background: #a95a53;
+}
+
+#primer_options p.submit {
+  text-align: left;
+  max-width: 100%;
+  margin-top: 40px;
+  padding-top: 10px;
+}
+
+.primer_header_logo_container {
+  text-align: center;
+}
+
+.primer-blog-image-container {
+  margin: 35px 0 0;
+}
+
+.primer-blog-name-container {
+  margin: 30px 0 0;
+}
+
+img#primer-preview-image {
+  margin: 25px 0 15px;
+  border: 1px solid #eacdb9 !important;
+  padding: 5px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.primer-help-box {
+  width: 56%;
+  margin: 60px auto;
+  padding: 25px 50px 30px;
+  background: #e2d3cc;
+  overflow: auto;
+}
+
+.primer-help-box-copy {
+  font-family: "Cerebri Sans Book";
+  text-align: center;
+  line-height: 21px;
+}
+
+.primer-help-box-copy h2 {
+  text-align: center;
+  font-family: "Cerebri Sans Book";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+.primer-help-box-social {
+  margin: 25px auto 10px;
+  overflow: auto;
+}
+.primer-help-box-social-ig {
+  width: calc(50% - 7px);
+  float: left;
+  position: relative;
+}
+.primer-help-box-social-ig img {
+  width: 100%;
+}
+.primer-help-box-social-fb {
+  width: calc(50% - 7px);
+  float: right;
+  position: relative;
+}
+.primer-help-box-social-fb img {
+  width: 100%;
+}
+
+/* Edit post page */
+
+#primer-box {
+  background: white;
+  border: 1px solid #e5e5e5;
+  box-shadow: none !important;
+  outline-offset: 6px;
+  padding: 30px 40px;
+}
+#primer-box > .handlediv span {
+  color: #a95a53;
+}
+#primer-box h2.hndle.ui-sortable-handle {
+  border-bottom: 1px solid #eacdb9;
+  font-family: "Cerebri Sans Book";
+  color: #a95a53;
+  letter-spacing: 0.5px;
+  padding: 8px 0;
+}
+#primer-box .postbox .handlediv .toggle-indicator:before {
+  color: #a95a53;
+  margin-top: 0;
+}
+#primer-box .postbox{
+  border: none;
+}
+#primer-dynamic-form .field_row {
+  border: 1px solid #eacdb9;
+  padding: 0 !important;
+  border-radius: 0;
+  margin: 20px auto;
+  box-shadow: none !important;
+  position: relative;
+}
+#primer-box .inside {
+  padding: 0 !important;
+}
+#primer-dynamic-form {
+  margin: 40px auto;
+}
+#primer-dynamic-form .primer-images-container h4 {
+  font-family: "cerebri sans book";
+  font-weight: normal;
+  color: #cd9084;
+  margin: 0 0 5px;
+}
+#primer-dynamic-form h3 {
+  font-family: "Cerebri Sans";
+  color: #000000;
+  font-weight: normal;
+  margin: 5px 6px;
+  padding: 8px 12px;
+}
+#primer-dynamic-form .postbox > .inside{
+  border: none;
+}
+#primer-dynamic-form .primer-description {
+  font-family: "Cerebri Sans Book";
+  margin: 15px 0;
+}
+#primer-dynamic-form .primer-description.set-description{
+  padding: 0 20px;
+  margin-top: 0;
+}
+#primer-dynamic-form .primer-images-container .form_field {
+  margin: 0 2px 15px;
+}
+#primer-dynamic-form .metabox-holder .postbox>h3 {
+  padding: 12px 20px;
+}
+#primer-dynamic-form .postbox .handlediv {
+  height: 43px;
+  background: none;
+  border: none;
+}
+#primer-dynamic-form input.button.valid {
+  background: #cd9084;
+  border-color: #cd9084;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-family: "Cerebri Sans Book";
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  color: #fff;
+  height: 34px !important;
+}
+#primer-dynamic-form input.button.valid:hover {
+  background: #a95a53;
+  border-color: #a95a53;
+}
+#primer-dynamic-form a.remove_row {
+  color: #a95a53;
+}
+#primer-dynamic-form .primer-images-container > .field_group:first-child {
+  width: 100% !important;
+}
+#primer-dynamic-form .primer-images-container > .field_group:not(:first-child) {
+  width: 100% !important;
+}
+#primer-dynamic-form .primer-image-input::before {
+  color: #e3e5e5;
+  opacity: 1;
+}
+#primer-dynamic-form .primer-image-input {
+  border: 1px solid #e3e5e5;
+}
+#primer-dynamic-form .field_group {
+  margin: 0 0 25px !important;
+  box-shadow: none !important;
+}
+#primer-dynamic-form .primer-images-container {
+  border-bottom: 4px double #eacdb9;
+  padding: 0 0 35px;
+  margin: 0 0 30px;
+}
+#primer-dynamic-form .field_group.products_group {
+  padding: 10px 0 !important;
+  border-top: 4px double #eacdb9;
+  margin: 30px 0 20px;
+}
+#primer-dynamic-form .field_group.products_group > .products-row:last-child {
+  border-bottom: none !important;
+}
+#primer-dynamic-form .products-row {
+  border-bottom: 1px solid #eacdb9 !important;
+  border: 0;
+  margin-bottom: 10px;
+  padding: 5px 25px 20px;
+  border-radius: 0 !important;
+  box-shadow: none;
+  position: relative;
+}
+#primer-dynamic-form .form-table th {
+  font-weight: normal;
+  font-family: "cerebri sans book";
+  color: #cd9084;
+  font-size: 13px;
+}
+#primer-dynamic-form .add_product {
+  float: right;
+  background: #eacdb9 !important;
+  color: #fff !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 18px !important;
+  font-family: "cerebri sans book";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  height: 34px !important;
+}
+#primer-dynamic-form .add_product:hover {
+  background: #e0c0aa !important;
+  color: #fff;
+}
+#primer-dynamic-form .form-table input[type=text] {
+  border: 1px solid #e3e5e5;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  width: 92%;
+}
+#primer-dynamic-form .form-table .regular-text {
+  width: 92%;
+}
+#primer-dynamic-form .primer-tooltip {
+  border-bottom: none;
+  color: #f2cbb6;
+}
+#primer-dynamic-form .primer-tooltip .tooltiptext {
+  background-color: #f2cbb6;
+  color: #fff;
+  font-size: 12px;
+  font-family: "cerebri sans book";
+  padding: 10px;
+  min-width: 130px;
+  border-radius: 0;
+}
+#primer-dynamic-form .primer-tooltip .tooltiptext::after {
+  border-color: #f2cbb6 transparent transparent transparent;
+}
+
+#primer-dynamic-form #add_field_row input{
+  background: #cd9084;
+  border-color: #cd9084;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-family: "Cerebri Sans Book";
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  color: #fff;
+  height: 34px;
+  padding: 0 36px;
+}
+
+#primer-dynamic-form .products-row:last-child {
+  border-bottom: none !important;
+}
+
+/* Privacy */
+.primer_checkbox_container {
+  font-family: "Cerebri Sans Book";
+}
+
+.primer_checkbox_container a{
+  color:#cd9084;
+  text-decoration: none;
+}
+
+.primer-help-box-copy a {
+  color: #aa5a53
+}
+
+.primer_checkbox_container input{
+  background: white !important;
+  box-shadow: none !important;
+  border: 1px solid #eacdb9;
+}
+
+.primer_checkbox_container input::before {
+  color:#cd9084!important;
+}
+
+#primer_blog_privacy_copy {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #eacdb9 !important;
+}
+
+#primer-dynamic-form .empty-set {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Cerebri Sans Book";
+}
+
+#primer-privacy-not-accepted {
+  text-align: center;
+  padding: 30px 0;
+  background: #e2d3cc;
+  font-family: 'Cerebri Sans Book'
+}
+
+#primer-privacy-not-accepted a{
+  color: #444
+}
+
+.primer_image_error_message{
+  color: red
+}
+
+#primer-post-count-notification .primer-notification-container-buttons {
+  display: inline-block;
+  width: 35%;
+  text-align: center;
+}
+
+#primer-post-count-notification .primer-notification-container-buttons a{
+  color: black;
+}
+
+#primer-post-count-notification  .primer-notification-btn{
+  margin-right: 15px;
+  text-decoration: underline;
+}
+
+#primer-post-count-notification .primer-rate.primer-notification-btn{
+  background: #cd9084;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  font-family: "Cerebri Sans Book";
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#primer-post-count-notification .primer-notification-left {
+  font-weight: 600;
+}
+
+
+
+#primer-post-count-notification .primer-notification-left {
+  display: inline-block;
+  width: 50%;
+}
+
+#primer-post-count-notification {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+#primer-post-count-notification .primer_message_submark_container{
+  width: 15%;
+}
+
+@media screen and (max-width: 1250px){
+  #primer-post-count-notification .primer-notification-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #primer-post-count-notification .primer-notification-container-buttons {
+    width: 100%;
+    text-align: left;
+  }
+  #primer-post-count-notification .primer_message_submark_container {
+    display: none;
+  }
+}
+
+.primer-product-description {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+    opacity: 0.5;
+    margin-left: 2px;
+}
